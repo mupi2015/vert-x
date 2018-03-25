@@ -37,7 +37,6 @@ dependencies {
 
     compileOnly 'org.projectlombok:lombok:1.16.20'
 
-
     compile 'io.vertx:vertx-lang-kotlin'
 
     compile "io.vertx:vertx-core:$vertx_version"
