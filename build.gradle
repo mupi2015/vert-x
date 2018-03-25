@@ -50,7 +50,7 @@ dependencies {
 }
 
 vertx {
-    mainVerticle = "experiment.EntryPoint"
+    mainVerticle = "experiment.SimpleServerVerticle"
 }
 
 //override generated jar name without version
