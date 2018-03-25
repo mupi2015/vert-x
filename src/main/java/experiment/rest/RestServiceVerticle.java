@@ -12,7 +12,7 @@ public class RestServiceVerticle extends AbstractVerticle {
     public void start(Future<Void> future) {
 
         Router router = Router.router(vertx);
-        router.get("/api/baeldung/articles/article/:id")
+        router.get("/api/article/:id")
                 .handler(this::getArticles);
 
         vertx.createHttpServer()

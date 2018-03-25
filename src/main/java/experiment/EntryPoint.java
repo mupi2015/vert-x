@@ -1,5 +1,6 @@
 package experiment;
 
+import experiment.rest.RestServiceVerticle;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Future;
 import io.vertx.core.Vertx;
@@ -11,7 +12,7 @@ public class EntryPoint extends AbstractVerticle {
 
     public static void main(String[] args) {
         Vertx vertx = Vertx.vertx();
-        vertx.deployVerticle(new EntryPoint());
+        vertx.deployVerticle(new RestServiceVerticle());
     }
 
 

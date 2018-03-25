@@ -50,6 +50,7 @@ dependencies {
 }
 
 vertx {
+    mainClassName = "experiment.EntryPoint"
     mainVerticle = "experiment.SimpleServerVerticle"
 }
 
