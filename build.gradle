@@ -28,11 +28,20 @@ repositories {
     jcenter()
 }
 
+
+ext{
+    vertx_version = '3.5.1'
+}
+
 dependencies {
+
+    compileOnly 'org.projectlombok:lombok:1.16.20'
+
+
     compile 'io.vertx:vertx-lang-kotlin'
 
-    compile 'io.vertx:vertx-core:3.5.1'
-    compile 'io.vertx:vertx-web:3.5.1'
+    compile "io.vertx:vertx-core:$vertx_version"
+    compile "io.vertx:vertx-web:$vertx_version"
 
     //slf4j/logback logging
     compile "ch.qos.logback:logback-classic:1.2.3"
